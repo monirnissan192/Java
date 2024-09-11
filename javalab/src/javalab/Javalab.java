@@ -3,33 +3,41 @@
 package javalab;
 
 public class Javalab {
-
-    
-    public static void main(String[] args) {
-        
-    Cat cat=new Cat();
-       cat.Eat();
-       cat.Sleep();
-       cat.Dia();
+public static void main(String[] args) {
+     Bmw bmw=new Bmw();
+     bmw.Brand();
+     bmw.Model();
+     bmw.NumofWheel();
+     bmw.IsTopsportsBrand();
+   
        
     }  
 }
-abstract class Animal{
-    
-abstract void Eat();
-abstract void Sleep();
-abstract void Dia();
+     
+abstract class Car{
+   int wheels=4; 
+abstract void Brand();
+abstract void Model();
+abstract void NumofWheel();
 }
-class Cat extends Animal{
-  void Eat(){
-      System.out.println("Cat is Eating");
+interface TopSportsBrand{
+    abstract void IsTopsportsBrand();
+}
+class Bmw extends Car implements TopSportsBrand{
+  void Brand(){
+      System.out.println("Bmw Brand");
   }  
-  void Sleep(){
-      System.out.println("Cat is Sleeping");
+  void Model(){
+      System.out.println("2018");
   }
-  void Dia(){
-      System.out.println("Cat is Diaing");
+  void NumofWheel(){
+      System.out.println(wheels);
+  }
+  public void IsTopsportsBrand(){
+      System.out.println("The car is Bmw");
   }
 }
+
+
 
 
