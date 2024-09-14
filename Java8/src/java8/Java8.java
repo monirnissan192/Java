@@ -5,15 +5,16 @@ import java.util.Scanner;
 public class Java8 {
     String Name;
     int Id;
-    double Marks;
+    String Marks,Marks1;
     void getInfo(){
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the Name:");
-        System.out.println("Enter the Id:");
-        System.out.println("Enter the Marks:");
         Name=sc.nextLine();
+        System.out.println("Enter the Id:");
         Id=sc.nextInt();
-        Marks=sc.nextDouble();
+        System.out.println("Enter the Marks:");
+        Marks1=sc.nextLine();
+        Marks=sc.nextLine();
     }
     void Show(){
         System.out.println("My Name is :"+Name);
@@ -23,13 +24,15 @@ public class Java8 {
     
     public static void main(String args[]) {
      Java8[] sc=new Java8[2];
-     for(int i=0;i<2;i++){
-        sc[i]=new Java8();
-        sc[i].getInfo();
-       
+     for(int i=0;i<sc.length;i++){
+       sc[i]=new Java8();
+       sc[i].getInfo();
      }
-     for(int i=0;i<2;i++){
-         sc[i].Show();
+     for(int i=0;i<sc.length;i++){
+       sc[i].Show();
      }
+     
+     }
+     
+      
     }
-}
