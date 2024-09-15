@@ -1,6 +1,6 @@
 package java12;
 
-// Multilevel Inheritence: //
+// Hiararchical Inheritence: //
 
 class A{
     float length=5;
