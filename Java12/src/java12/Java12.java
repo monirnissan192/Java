@@ -3,30 +3,28 @@ package java12;
 // Multilevel Inheritence: //
 
 class A{
-    void Nissan(){
-        System.out.println("Life is a Race");
-    }
-  
+    float length=5;
+    float bredth=2.4f;
+  void Nissan(){
+      System.out.println("Hiararchical working");
+  }
 }
 class B extends A{
-    void Nissan1(){
-        Nissan();
-       System.out.println("Life is like a game");
+    float Nissan1(){
+        return (length*bredth);
     }
 }
 class C extends B{
-    void Nissan2(){
-        Nissan1();
-        System.out.println("Yes Of course you see this");
+    float Nissan2(){
+        return 2+(length*bredth);
     }
 }
 
 public class Java12{
     public static void main(String args[]){
         C ob=new C();
-        ob.Nissan2();
-        
-        
-        
+        ob.Nissan();
+        System.out.println(ob.Nissan1());
+        System.out.println(ob.Nissan2());
     }
-}
+    }
