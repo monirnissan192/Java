@@ -1,5 +1,5 @@
 package java16;
-
+// Hierarchical Inheritance
 class A{
     public void MethodA(){
             System.out.println("Method A Working");  
