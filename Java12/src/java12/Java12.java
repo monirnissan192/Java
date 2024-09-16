@@ -14,7 +14,7 @@ class B extends A{
         return (length*bredth);
     }
 }
-class C extends B{
+class C extends A{
     float Nissan2(){
         return 2+(length*bredth);
     }
@@ -22,9 +22,10 @@ class C extends B{
 
 public class Java12{
     public static void main(String args[]){
+        B ob1=new B();
         C ob=new C();
         ob.Nissan();
-        System.out.println(ob.Nissan1());
+        System.out.println(ob1.Nissan1());
         System.out.println(ob.Nissan2());
     }
     }
