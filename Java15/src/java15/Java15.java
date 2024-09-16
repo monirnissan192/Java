@@ -1,7 +1,7 @@
 
 package java15;
 
-// Hybridal Inheritence
+// Hybrid Inheritence
 class Animal{
     public void Eat(){
         System.out.println("");
