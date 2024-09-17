@@ -3,15 +3,15 @@ package java15;
 
 // Hybrid Inheritence
 class Animal{
-    public void Eat(){
+    abstract void Eat(){
         System.out.println("");
     }
 }
 interface Bird{
-    void Fly();
+ abstract void Fly();
 }
 interface Cat{
-    void Sleep();
+  abstract void Sleep();
 }
 class Bat extends Animal implements Bird,Cat{
     
