@@ -3,7 +3,7 @@ package java15;
 
 // Hybrid Inheritence
 class Animal{
-    abstract void Eat(){
+    public void Eat(){
         System.out.println("");
     }
 }
