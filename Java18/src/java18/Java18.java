@@ -1,5 +1,5 @@
 package java18;
-
+// Constructor Inheritance //
 class Shape{
    private int length;
    private int breadth;
