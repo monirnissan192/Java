@@ -1,4 +1,4 @@
-
+//Design Pattern
 package java20;
 
 class Singleton{
